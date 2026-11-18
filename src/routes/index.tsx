@@ -53,7 +53,7 @@ function Cta({ children, variant = "coral", href = CTA_URL }: { children: ReactN
   );
 }
 
-function Selo({ children, tone = "aqua" }: { children: ReactNode; tone?: "aqua" | "coral" | "lilac" | "blue" | "dark" }) {
+function Selo({ children, tone = "aqua" }: { children: ReactNode; tone?: "aqua" | "coral" | "lilac" | "blue" | "dark" | undefined }) {
   const t = {
     aqua: "bg-aqua-soft text-teal-ink",
     coral: "bg-coral-soft text-coral-ink",
