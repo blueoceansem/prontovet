@@ -107,6 +107,12 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <head>
         <HeadContent />
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { window.dataLayer.push(arguments); }
+          gtag('js', new Date());
+        `}</script>
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-P298Q8JC" />
       </head>
       <body>
         {children}
